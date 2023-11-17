@@ -19,7 +19,7 @@
   const handleSubmit = async (event) => {
     // Reset UI.
     let tableDataElements = [cell1, cell2, cell3];
-    let tableDataSubarrays = [tableDataElements.slice(0,1),tableDataElements.slice(0,2), tableDataElements.slice(0,3)];
+    let tableDataSubarrays = [tableDataElements.slice(0,1), tableDataElements.slice(0,2), tableDataElements.slice(0,3)];
 
     passwordQuality = '';
     tableDataElements.forEach((element) => element.style['background-color'] = 'white');
@@ -46,7 +46,8 @@
 
     // Update UI elements.
     passwordQuality = statusMap[data.prediction];
-    tableDataSubarrays[data.predict].forEach((element) => element.style['background-color'] = colorMap[data.predict]);
+    const index = Number(data.prediction);
+    tableDataSubarrays[index].forEach((element) => element.style['background-color'] = colorMap[index]);
   }
 </script>
 
