@@ -6,16 +6,24 @@ Web app that uses machine learning to classify that strength of a password.
 
 Built using Svelte, Python, Scikit-Learn, and Flask, this web app will use real data and machine learning to classify the strength of a password. The data set comes from [here](https://www.kaggle.com/datasets/bhavikbb/password-strength-classifier-dataset) and is classified using a tool developed by Georgia Tech called PARS. The passwords for the dataset come from publicly sourced databreaches. The password strength falls into one of three catergories, weak, medium, and strong. The model used to predict the dataset is a simple logistic regression that tokenizes the input. Accuracy for the model sits at around 82%. Further development would include adding to the dataset, training and testing with neural networks, and deploying to the web.
 
+## Demo Video
+
+https://github.com/cameronMcConnell/SecureCheck/assets/93450810/657c8406-cf50-43e8-a508-ef10181a40fb
+
 ## Getting Started
 
 ### Dependencies
 
-* ```python, npm, flask, scikit-learn```
+* ```python```
+* ```npm```
+* ```flask```
+* ```scikit-learn```
 
 ### Installing
 
 * To install for the frontend, go to the ```/Frontend``` directory and do ```npm install```.
-* To install for the backend, got to the ```/Backend``` directory and either use ```pip``` to install ```scikit-learn & flask``` or use a virtual environment, ```python -m .venv <name>```.
+* To install for the backend, got to the ```/Backend``` directory and either use ```pip``` to install ```scikit-learn & flask```.
+   *  Or just use a virtual environment, ```python -m .venv <name>```.
 
 ### Executing program
 
@@ -24,7 +32,7 @@ Built using Svelte, Python, Scikit-Learn, and Flask, this web app will use real 
 
 ## Help
 
-* Please contact me at my socials for any assitance.
+* Please contact me at my socials for any questions.
 
 ## Authors
 
